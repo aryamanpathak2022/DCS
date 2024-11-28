@@ -4,7 +4,7 @@ clear
 
 % Constants
 Fs = 1000;
-Tb = 1;
+Tb = 1; 
 
 % Generating Rectangular Pulse
 Tp = 1.2;

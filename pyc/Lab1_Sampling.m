@@ -18,7 +18,7 @@ msgSignal = cos(2*pi*msgFreq*msgDuration);% Define the original signal for 5 cyc
 %% Sampling the signal
 sFreq = 400;          % New sampling frequency
 sInstants = 0:(1/sFreq):5*msgPeriod;
-sSignal = sin(2*pi*msgFreq*sInstants);
+sSignal = cos(2*pi*msgFreq*sInstants);
 
 %% Reconstruction
 rSignal = zeros(size(msgDuration));
@@ -64,4 +64,4 @@ function y = sinc(x)
     y = sin(pi*x)./(pi*x);
     y(x == 0) = 1;
 end
-
+    

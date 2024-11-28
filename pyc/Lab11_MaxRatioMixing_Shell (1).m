@@ -26,7 +26,7 @@ for blk = 1:nBlocks
     end
 end
 
-BER = BER/blockLength/nBlocks;    %check this line---> correct it
+BER = BER/2*blockLength*nBlocks;    %check this line---> correct it
 semilogy(SNRdb,BER,'LineWidth',3.0)
 
 grid on
