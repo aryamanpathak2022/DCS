@@ -48,7 +48,7 @@ for K = 1:length(SNRdB)
     for blk = 1:nBlocks
         Bits = randi([0,1],blocklength,1);
         TxSymbols = modulation(Bits);
-        noiseStdDev*(1/(2*snrLinear));
+        noiseStdDev=(1/(2*snrLinear));
         noise = noiseStdDev*(randn(size(TxSymbols)) + 1i*randn(size(TxSymbols)));
         RxSymbols = TxSymbols + noise;
 

@@ -33,7 +33,7 @@ for blk = 1:nBlocks
         BER_pCSI(K) = BER_pCSI(K) + sum(Decbits_pCSI ~= Bits); % Calculate BER of perfect channel
        
         EqSym_imCSI = RxSym(nPilot:blocklength)/hEst;
-        Decbits_imCSI = (EqSym_imCSI > 0);
+        Decbits_imCSI = (EqSym_imCSI > 0);  
         % Equlization of estimated/imperfect channel
         
         %Make decision based on received symbols to recover the bits under imperfect channel
